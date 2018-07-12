@@ -1,0 +1,328 @@
+@import 'vars';
+@import 'mixins';
+
+
+// 菜单管理
+.el-menu--dark {
+  background: $sidebar_bg;
+  .el-submenu .el-menu {
+    background: $sidebar_bg;
+  }
+}
+
+.el-menu-item-group__title,
+.el-menu--dark .el-menu-item, .el-menu--dark .el-submenu__title {
+  color: $sidebar_color;
+}
+
+.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active, .el-menu-item.is-active {
+  color: $sidebar_color;
+  background: $sidebar_active;
+}
+
+.el-menu--dark .el-menu-item:hover, .el-menu--dark .el-submenu__title:hover {
+  background: $sidebar_active;
+}
+
+.el-menu--dark .el-submenu .el-menu .el-menu-item:hover {
+  background: $sidebar_active;
+}
+
+// 内容管理
+.content {
+  padding: 0 40px;
+  //margin-left: 2%;
+  background: #FFF;
+  //width: 95%;
+  height: -webkit-fill-available;
+  // 搜索部分
+  .hy-search-bar {
+    width: 100%;
+    //background: #EEEEEE;
+    // padding: 12px 15px;
+    padding: 25px 15px 0px 25px;
+    border-top: 1px solid #DBDFE3;
+    .hy-search-input {
+      input {
+        border-radius: 18px;
+        padding: 3px 15px;
+      }
+    }
+    .hy-search-button {
+      border-radius: 18px;
+    }
+  }
+  .hy-search-bar2 {
+    padding: 15px 0 0;
+    height: 55px;
+    // 搜索栏 input 风格
+    //.ivu-form-item {
+    //  margin-bottom: 10px;
+    //}
+    //.ivu-select {
+    //  width: 162px;
+    //}
+  }
+  .hy-tool-bar {
+    background: #FFFFFF;
+    padding: 12px 15px;
+    .hy-search-button {
+      border-radius: 18px;
+      &.hy-default-btn {
+        cursor: not-allowed;
+        background: #EEEEEE;
+        border-color: #EEEEEE;
+        color: #97a1ac;
+      }
+    }
+  }
+  .hy-table-bar {
+    padding: 15px 15px 0px 15px;
+  }
+}
+.map-content {
+  padding: 0!important;
+}
+.hy-remote-control {
+  padding: 15px 0 0;
+  height: 55px;
+  .ivu-form-inline
+  {
+    .ivu-form-item{
+      width: 250px;
+    }
+  }
+}
+// table部分样式
+.hy-table {
+  .el-table__header-wrapper {
+    border-color: #DBDFE3;
+  }
+  .el-table {
+    color: #777777;
+    th {
+      background: #EEEEEE;
+    }
+    td, th {
+      height: 45px;
+    }
+    td, th.is-leaf {
+      border-color: #DDDDDD;
+    }
+  }
+  .el-table__footer-wrapper thead div, .el-table__header-wrapper thead div {
+    background: #EEEEEE;
+    color: #777777;
+  }
+}
+
+// 修改element-ui样式
+.el-input__inner {
+  border-color: #D6D6D6;
+}
+
+/*.el-tag {
+    background: rgb(147, 157, 166);
+}*/
+.el-tooltip__popper.is-dark {
+  max-width: calc(100% - 240px);
+  background: rgb(147, 157, 166);
+  color: #FFFFFF;
+  .popper__arrow,
+  .popper__arrow::after {
+    border-top-color: rgb(147, 157, 166);
+  }
+}
+
+.el-tooltip__popper[x-placement^=top] .popper__arrow {
+  border-top-color: rgb(147, 157, 166);
+  &::after {
+    border-top-color: rgb(147, 157, 166);
+  }
+}
+
+.el-tooltip__popper[x-placement^=left] .popper__arrow {
+  border-left-color: rgb(147, 157, 166);
+  &::after {
+    border-left-color: rgb(147, 157, 166);
+  }
+}
+
+.el-tooltip__popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: rgb(147, 157, 166);
+  &::after {
+    border-bottom-color: rgb(147, 157, 166);
+  }
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow {
+  border-right-color: rgb(147, 157, 166);
+  &::after {
+    border-right-color: rgb(147, 157, 166);
+  }
+}
+
+.el-select {
+  display: block;
+}
+
+.el-date-editor--daterange.el-input,
+.el-date-editor.el-input {
+  width: 100%;
+}
+
+.el-autocomplete, .el-dropdown {
+  display: block;
+}
+
+// 公共盒子模型
+.mr5 {
+  margin-right: 5px !important;
+}
+
+// 取消按钮的样式
+.hy-cancel-button {
+  background: #EEEEEE;
+  color: #97a1ac;
+  border-color: #EEEEEE;
+  &:active,
+  &:hover,
+  &:visited,
+  &:focus {
+    border-color: #EEEEEE;
+    color: #97a1ac;
+  }
+  &:active {
+    background: rgba(0, 0, 0, 0.125);
+  }
+}
+
+// 首页地图info
+.infoWindow {
+  width: 280px;
+  background: #FFF;
+  padding: 12px 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125);
+  border: 1px solid #d6d6d6;
+  position: relative;
+  &:after,
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 6px solid transparent;
+    top: 100%;
+    left: 50px;
+  }
+  &:after {
+    border-top: 10px solid #FFF;
+  }
+  &:before {
+    border-top: 10px solid #d6d6d6;
+    top: calc(100% + 2px);
+  }
+  p.info {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #777777;
+    span {
+      color: #97a1ac;
+    }
+  }
+  button.closed {
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    border: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+    &:hover {
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+    }
+  }
+  li {
+    float: left;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 15px;
+    vertical-align: middle;
+    i.iconfont {
+      margin-right: 4px;
+    }
+  }
+  .orange {
+    color: #f88b30;
+  }
+  .green {
+    color: #2abb9b;
+  }
+}
+// echart 图表样式
+.hy-echarts {
+  height: 500px;
+  width: auto;
+  border: 1px solid #dddee1;
+  border-radius: 4px 4px 0 0;
+  .hy-echarts-header {
+    background-color: #f4f4f4;
+    height: 50px;
+    font: 20px 微软雅黑;
+    border-radius: 4px 4px 0 0;
+    margin-right: 1px;
+    line-height: 50px;
+    padding: 0 10px 0 15px;
+  }
+  .hy-echarts-badge {
+    float: right;
+    margin-top: 12px;
+  }
+  .hy-echarts-body {
+    width: 100%;
+    height: 450px;
+  }
+}
+// modal title
+.hy-modal-title {
+  color:#47bac2 !important;
+  text-align:center;
+}
+.ivu-btn-success {
+  color: #fff;
+  background-color: #47bac2 !important;
+  border-color: #47bac2 !important;
+  &:hover,
+  &.active {
+    border-color: #47bac2 !important;
+    background: #47bac2 !important;
+    a {
+      color: #FFF;
+      i {
+        color: #FFF;
+      }
+    }
+  }
+}
+.ivu-tag-blue, .ivu-tag-blue.ivu-tag-dot .ivu-tag-dot-inner {
+  background: red;
+}
+.ivu-select-dropdown{
+  z-index: 5 !important;
+}
+.clearfix{clear: both;zoom: 1;overflow: hidden;}
+.clear{clear: both;}
+.full{width: 100%;}

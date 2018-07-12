@@ -1,0 +1,169 @@
+/* 全局样式 */
+.single-page button,
+.single-page input,
+.single-page select,
+.single-page textarea,
+.single-page .ivu-select-selection,
+.single-page .ivu-select-input,
+.single-page .ivu-select,
+.single-page .ivu-input-group-append,
+.single-page .ivu-input-group-prepend {
+  border-radius: 0px;
+}
+/* 全局Card样式 */
+.ivu-card-body {
+  padding: 10px!important;
+}
+.pic-card .ivu-card-body {
+  padding: 0px!important;
+}
+/* 搜索栏样式 */
+.search-item {
+  margin-bottom: -10px;
+  margin-right: 120px;
+  transition: height 0.3s;
+}
+.search-item .ivu-select-selection {
+  min-width: 180px;
+}
+.search-item .ivu-input-wrapper input {
+  min-width: 180px;
+}
+.search-item .datepicker {
+  width: 240px;
+}
+.search-item .datepicker .ivu-input {
+  width: 240px;
+}
+.search-btn {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: auto;
+}
+.search-btn .search-more {
+  color: #666;
+  font-size: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 10px;
+  line-height: 20px;
+}
+.search-btn .search-btn-plus {
+  margin-left: 5px !important;
+}
+.ruleNOne .ivu-form-item-label::before {
+  display: none!important;
+}
+.el-icon-zoom-in {
+  font-size: 30px!important;
+  position: absolute;
+  left: 60px;
+  top: 65px;
+}
+.el-icon-delete {
+  position: absolute;
+  left: 110px;
+  top: 115px;
+}
+.el-dialog__wrapper .el-dialog {
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0);
+}
+.el-dialog__wrapper .el-dialog .el-dialog__close {
+  display: none;
+}
+.el-dialog__wrapper img {
+  border: 15px solid #fff;
+  border-top: 20px solid #fff;
+  box-sizing: content-box;
+  margin-left: 60px;
+}
+.el-dialog__wrapper .closedig {
+  width: 40px!important;
+  height: 40px!important;
+  border-radius: 50%!important;
+  position: fixed;
+  top: 100px!important;
+  right: 30px!important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: none;
+}
+.el-dialog__wrapper .closedig .ivu-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+.el-dialog__wrapper .refresh {
+  width: 40px!important;
+  height: 40px!important;
+  border-radius: 50%!important;
+  position: fixed;
+  top: 100px!important;
+  right: 100px!important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: none;
+}
+.el-dialog__wrapper .refresh .ivu-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+.tem-add-div {
+  min-width: 960px;
+  padding: 10px;
+}
+.tem-add-div .c-header {
+  background: #fff;
+}
+.tem-add-div .c-header button {
+  margin: 15px 0 15px 15px;
+  width: 85px;
+}
+.tem-add-div .c-content {
+  background: #fff;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.tem-add-div .c-content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 25px 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #666;
+}
+.tem-add-div .c-content .ivu-row {
+  height: 55px;
+}
+.tem-add-div .c-content .ivu-row .ivu-col {
+  height: 55px;
+}
+.tem-add-div .c-content .jg-select {
+  height: 160px;
+}
+.tem-add-div .c-content button {
+  float: right;
+}
+/* 合同新增编辑样式*/
+.tem-div .tab {
+  padding: 6px;
+}
+.tem-div .tab h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 25px 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #666;
+}
+.tem-div .tab .ivu-form-item .ivu-date-picker {
+  width: 100%;
+}
+.tem-div .tab .uploadInput .ivu-input-icon-clear {
+  margin-right: 75px;
+}
+.tem-div .tab .uploadInput .ivu-input-group-append {
+  padding: 0;
+}
+.tem-div .tab .uploadInput .ivu-input-group-append button {
+  margin: 0;
+  float: none;
+  padding: 0;
+  height: 30px;
+  width: 72px;
+}

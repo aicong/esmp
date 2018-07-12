@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>承运商运营管理系统</title>
+    <link rel="icon" href="/static/images/icon.ico" type="image/x-ico" />
+    <link rel="stylesheet" type="text/css" href="/static/style/reset.css" />
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=hZSj3ImvmHUOpIGPTKZr5NPftcYNpKW1"></script>
+    <script src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <script src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+    <!--<script src="/static/js/MarkerClusterer.js"></script>-->
+    <script type="text/javascript" src="https://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils_min.js"></script>
+    <!--<script src="http://api.map.baidu.com/getscript?v=2.0&ak=hZSj3ImvmHUOpIGPTKZr5NPftcYNpKW1&services=&t=20180130193904"></script>-->
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/library/DistanceTool/1.2/src/DistanceTool_min.js"></script>-->
+    <script type="text/javascript" src="/static/js/DistanceTool_min.js"></script>
+    <!--加载鼠标绘制工具-->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+    <!--加载检索信息窗口-->
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>-->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/InfoBox/1.2/src/InfoBox_min.js"></script>
+    <!--<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />-->
+    <!-- UI组件库 1.0.0 -->
+    <!-- <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script> -->
+    <!--去除高德地图logo-->
+  </head>
+  <body style="overflow-y: hidden;">
+  <!--<div class="lock-screen-back" id="lock_screen_back"></div>-->
+    <div id="app" class="autoHeight" style="overflow: auto">
+        <router-view></router-view>
+    </div>
+  </body>
+</html>
